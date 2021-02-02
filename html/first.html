@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white !important;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li:hover {
+            background-color: #111111;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <h1>My first heading.</h1>
+    <p>My first paragraph.</p>
+
+    <a href="https://www.w3schools.com/">This is link</a>
+
+    <img src="logo.jpg" alt="w3schools.com" width="104" height="142">
+
+    <h2 title="I'm a header">The title Attribute</h2>
+
+    <p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
+
+    <h1 style="font-size:60px;">Heading 1</h1>
+
+    <p>The pre tag preserves both spaces and line breaks:</p>
+    <pre style="background-color: aqua; color: black; font-family:verdana;">
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+   
+        Oh, bring back my Bonnie to me.
+    </pre>
+
+    <button type="button" onclick="myFunction()">Click Me</button>
+
+    <p id="demo">This is a demonstration.</p>
+     <script>
+         function myFunction(){
+             document.getElementById("demo").innerHTML = "Hello Javascript!";
+         }
+     </script>
+    <p>
+        <img src="smile.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+
+    <p><strong>Float the image to the left:</strong></p>
+    <p>
+        <img src="smile.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+    <img src="2.jpg" alt="Girl in a jacket">
+    <img src="3.jpg" alt="Girl in a jacket">
+
+    <p><b>This text is bold</b></p>
+    <p><i>This text is italic</i></p>
+    <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+    <strong>This text is important!</strong>
+
+    <p>Do not forget to buy <mark>milk</mark>today.</p>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature.
+        The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        1.2 million members in the United States and
+        close to 5 million globally.
+    </blockquote>
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+    <bdo dir="rtl">This line will be written from right to left</bdo>
+
+    <p><a href="#C4">jump to chapter 4</a></p>
+    <p><a href="#C10">jump to chapter 10</a></p>
+
+    <h2>Chapter 1</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 2</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 3</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C4">Chapter 4</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 5</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 6</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 7</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 8</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 9</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C10">Chapter 10</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Basic html table</h2>
+    <table style="width:100%">
+        <tr>
+            <th >FirstName</th>
+            <th>LastName</th>
+            <th >Age</th>
+        </tr>
+        <tr>
+            <td rowspan="2">jill</td>
+            <td>smith</td>
+            <td>50</td>
+        </tr>  
+        <tr>
+            
+            <td>smith</td>
+            <td>50</td>
+        </tr>  
+        <tr>
+            <td>jill</td>
+            <td>smith</td>
+            <td>50</td>
+        </tr>  
+        <tr>
+            <td>jill</td>
+            <td>smith</td>
+            <td>50</td>
+        </tr>  
+        <tr>
+            <td>jill</td>
+            <td>smith</td>
+            <td>50</td>
+        </tr>  
+        <tr>
+            <td colspan="2">eve jackson</td>
+            <td>54</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

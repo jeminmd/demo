@@ -1,0 +1,40 @@
+.container{
+    border: 5px solid black;
+}
+
+.row{
+    border: 3px solid mediumslateblue;
+}
+
+.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+    border: 3px solid tan;
+}
+.header{
+    height: 500px;
+    width: 500px;
+}
+#header{
+        background-color: teal;
+        padding: 10px 0 10px 10px;
+}
+
+#navbar{
+        background-color: palegoldenrod;
+}
+#navbar ul{
+    list-style: none;
+    padding: 3px 3px;
+}
+#navbar ul li{
+    display: inline-block;
+}
+
+#content{
+    background-color: violet;
+}
+#sidebar{
+    background-color: yellowgreen;
+}
+#footer{
+    background-color: gray;
+}

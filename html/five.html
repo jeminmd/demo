@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container  mt-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body">Primary card</div>
+        </div>
+        <br>
+        <div class="card bg-success text-white">
+            <div class="card-body">success card</div>
+        </div>
+        <br>
+        <div class="card bg-info text-white">
+            <div class="card-body">info card</div>
+        </div>
+        <br>
+        <div class="card bg-danger text-white">
+            <div class="card-body">danger card</div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some example text. Some example text.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div> <br>
+
+        <div class="dropdown  dropleft float-left">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                dropdown button
+            </button>
+            <div class="dropdown-menu">
+                <h5 class="dropdown-header">dropdown header</h5>
+                <a href="#" class="dropdown-item">Link 1</a>
+                <a href="#" class="dropdown-item active">Active</a>
+                <a href="#" class="dropdown-item disabled">Link 1</a>
+                <h5 class="dropdown-header">dropdown header</h5>
+                <div class="dropdown-divider"> </div>
+                <a href="#" class="dropdown-item">Another link</a>
+            </div>
+        </div>
+        <br><br>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#demo">Click Me</button>
+        <div class="collapse" id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate in
+            veritatis possimus temporibus eveniet quidem rerum aliquam! Voluptate reprehenderit officiis quam
+            consectetur consequuntur itaque in? Maxime, rem harum. Ipsa.</div>
+        <br><br><br>
+        <form action="/action.page.php">
+            <select name="cars" class="custom-select mb-3">
+                <option value="action">Custom Select Menu</option>
+                <option value="volvo">Volvo</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </form>
+
+        <h2>Filterable List</h2>
+        <p>Type something in the input field to search the list for specific items:</p>  
+        <input type="text" class="form-control" id="myInput" placeholder="Search...">
+        <br>
+        <ul class="list-group" id="myList"> 
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">Fourth</li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function(){
+                var value = $(this).val().toLowerCase();
+                $("#myList li").filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
